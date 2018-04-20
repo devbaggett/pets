@@ -1,0 +1,13 @@
+<div>
+	<h2>Pet Shelter</h2>
+	<h3>Details about {{ pet.name }}</h3>
+	<p><b>Pet type: </b>{{ pet.type }}</p>
+	<p><b>Description: </b>{{ pet.desc }}</p>
+	<p><b>Skills:</b></p>
+	<p>Skill 1: {{ pet.skill1 }}</p>
+	<p>Skill 2: {{ pet.skill2 }}</p>
+	<p>Skill 3: {{ pet.skill3 }}</p>
+	<p><b>Likes:</b> {{ pet.likes }}</p>
+	<button (click)="addLikeFromService(pet._id)">Like this pet</button>
+	<button (click)="deletePetFromService(pet._id)">Adopt this pet!</button>
+</div>

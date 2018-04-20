@@ -1,0 +1,18 @@
+<div>
+	<h2>Pet Shelter</h2>
+	<h4>Know of a pet needing a home?</h4>
+	<h5>The pet must have a name</h5>
+	<form (submit)="addPetFromService()">
+	    <!-- use the json pipe to see how newTask changes in real time -->
+	    <!-- <p> {{ pet | json }} </p> -->
+	    Name: <input type="text" name="pet.name" [(ngModel)]="pet.name"><br>
+	    Type: <input type="text" name="pet.type" [(ngModel)]="pet.type"><br>
+	    Desc: <input type="text" name="pet.desc" [(ngModel)]="pet.desc"><br>
+	    <p>Skills:</p>
+	    Skill 1: <input type="text" name="pet.skill1" [(ngModel)]="pet.skill1"><br>
+	    Skill 2: <input type="text" name="pet.skill2" [(ngModel)]="pet.skill2"><br>
+	    Skill 3: <input type="text" name="pet.skill3" [(ngModel)]="pet.skill3"><br>
+	    <input type="submit" value="Add Pet">
+	</form>
+	<button [routerLink]="['/allpets']">Cancel</button>
+</div>
